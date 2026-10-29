@@ -1,0 +1,164 @@
+
+/* Base */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  color: #333333;
+  margin: 0;
+  padding: 20px;
+}
+
+main {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Título */
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  margin: 0;
+  color: #2f5435;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 20px;
+}
+
+/* Cada área da página */
+section {
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+/* Formulário e filtros */
+.campo {
+  margin-bottom: 12px;
+}
+
+label {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: bold;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #999999;
+  border-radius: 4px;
+}
+
+.mensagem-erro {
+  color: #c0392b;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Botões */
+button {
+  padding: 8px 14px;
+  font-size: 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form button {
+  background-color: #2f5435;
+  color: #ffffff;
+}
+
+form button:hover {
+  background-color: #2f5435;
+}
+
+.botao-concluir {
+  background-color: #52b278;
+  color: #ffffff;
+}
+
+.botao-excluir {
+  background-color: #c0392b;
+  color: #ffffff;
+}
+
+/* Indicadores */
+#area-indicadores {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+#area-indicadores h2 {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+#area-indicadores p {
+  margin: 0;
+}
+
+/* Tarefas */
+.tarefa {
+  border: 1px solid #cccccc;
+  border-left: 6px solid #cccccc;
+  border-radius: 4px;
+  padding: 12px;
+  margin-bottom: 10px;
+}
+
+.tarefa h3 {
+  margin: 0 0 6px 0;
+}
+
+.tarefa p {
+  margin: 2px 0;
+  font-size: 14px;
+}
+
+.tarefa button {
+  margin-top: 10px;
+  margin-right: 6px;
+}
+
+.mensagem-vazia {
+  text-align: center;
+  color: #777777;
+}
+
+/* Cor da borda de acordo com a prioridade */
+.prioridade-baixa {
+  border-left-color: #3a8f5c;
+}
+
+.prioridade-media {
+  border-left-color: #e0a800;
+}
+
+.prioridade-alta {
+  border-left-color: #c0392b;
+}
+
+/* Tarefa concluída */
+.concluida {
+  background-color: #eeeeee;
+  color: #888888;
+}
+
+.concluida h3 {
+  text-decoration: line-through;
+}
