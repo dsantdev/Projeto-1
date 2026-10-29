@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Tarefas</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="javascript.js" defer></script>
+</head>
+<body>
+   
+  <header>
+    <h1>Gerenciador de Tarefas</h1>
+  </header>
+ 
+  <main>
+ 
+    <section id="area-cadastro">
+      <h2>Nova tarefa</h2>
+ 
+      <form id="form-tarefa" novalidate>
+        <div class="campo">
+          <label for="descricao">Descrição</label>
+          <input type="text" id="descricao" placeholder="Ex.: Fazer exercícios de JavaScript">
+        </div>
+ 
+        <div class="campo">
+          <label for="categoria">Categoria</label>
+          <select id="categoria">
+            <option value="">Selecione...</option>
+            <option value="Estudos">Estudos</option>
+            <option value="Trabalho">Trabalho</option>
+            <option value="Casa">Casa</option>
+            <option value="Pessoal">Pessoal</option>
+          </select>
+        </div>
+ 
+        <div class="campo">
+          <label for="prioridade">Prioridade</label>
+          <select id="prioridade">
+            <option value="">Selecione...</option>
+            <option value="Baixa">Baixa</option>
+            <option value="Média">Média</option>
+            <option value="Alta">Alta</option>
+          </select>
+        </div>
+ 
+        <div class="campo">
+          <label for="data">Data de conclusão</label>
+          <input type="date" id="data">
+        </div>
+ 
+        <!-- Mensagem de erro da validação -->
+        <p id="mensagem-erro" class="mensagem-erro" role="alert"></p>
+ 
+        <button type="submit">Adicionar tarefa</button>
+      </form>
+    </section>
+ 
+    <!-- Área de indicadores -->
+    <section id="area-indicadores">
+      <h2>Resumo</h2>
+      <p>Total de tarefas: <span id="total-tarefas">0</span></p>
+      <p>Tarefas pendentes: <span id="total-pendentes">0</span></p>
+      <p>Tarefas concluídas: <span id="total-concluidas">0</span></p>
+    </section>
+ 
+    <!-- Área de filtros -->
+    <section id="area-filtros">
+      <h2>Filtros</h2>
+ 
+      <div class="campo">
+        <label for="filtro-situacao">Situação</label>
+        <select id="filtro-situacao">
+          <option value="todas">Todas</option>
+          <option value="pendentes">Pendentes</option>
+          <option value="concluidas">Concluídas</option>
+        </select>
+      </div>
+ 
+      <div class="campo">
+        <label for="filtro-categoria">Categoria</label>
+        <select id="filtro-categoria">
+          <option value="todas">Todas</option>
+          <option value="Estudos">Estudos</option>
+          <option value="Trabalho">Trabalho</option>
+          <option value="Casa">Casa</option>
+          <option value="Pessoal">Pessoal</option>
+        </select>
+      </div>
+    </section>
+ 
+    <!-- Área da lista de tarefas -->
+    <section id="area-tarefas">
+      <h2>Tarefas</h2>
+      <div id="lista-tarefas"></div>
+    </section>
+ 
+  </main>
+ 
+  <script src="js/script.js"></script>
+</body>
+</html>
